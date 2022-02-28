@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modal-logo {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.modal-body {
+  padding: 1rem 5rem;
+}
+
+.text-form {
+  font-weight: 700;
+}
+
+.modal-footer {
+  display: block;
+}
+/*# sourceMappingURL=modal.css.map */

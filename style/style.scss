@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    z-index: 0;
+    font-size: 16px;
+    direction: ltr;
+}
+
+html {
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* height of sticky header */
+
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.navbar-collapse {
+
+    flex-grow: 0 !important;
+}
+
+.main-header {
+
+    background-color: rgba(0, 0, 0, 0.089);
+    display: flex;
+    flex-direction: row;
+    padding: 12px 26px;    
+    position: absolute;
+    width: 100vw;
+    z-index: 6;
+    
+    nav {
+
+        width: 100%;
+    }
+
+    .logo {
+
+        width: 10rem;
+        height: 2.75rem;
+        margin-top: 0.25rem;
+        margin-left: 0.95rem;
+        
+        
+    }
+
+    .nav-banner {
+        
+        justify-content: space-between;
+
+    }
+
+    .select-language {
+        display: flex;
+        gap: 1.5rem;
+        margin-right: 2rem;
+
+        .language {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid #aaa;
+            color: #ffffff;
+            font-size: .875rem;
+            padding: 0.5rem 1.375rem;
+            font-weight: 500;
+                  
+
+            option {
+                background: gray;
+                color: #fff;
+                
+            }
+        }
+
+        .language::after {
+            content: url(
+                /img/icomoon/SVG/search.svg
+            );
+        }
+
+        .red-button {
+            background-color: #e50914;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            padding: 7px 17px;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        
+    } 
+
+}
+
+
+.main-banner {
+
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),  url("/img/BR-pt-20220214-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    // background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+    .banner-items {
+
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        // align-items: center;       
+        margin: 0 auto;
+
+        .story-card-text {
+            color: #fff;
+            text-align: center;
+            margin-top: 20%;
+            position: relative;
+            width: 100%;
+            padding: 75px 0;
+            z-index: 1;
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 700;
+                max-width: 800px;
+                margin: 0 auto;    
+            } 
+
+            h2 {
+                font-size: 1.625rem;
+                font-weight: 400;
+                margin: 1rem auto;
+                max-width: 800px;
+            }
+        }
+
+        .email-form {
+            width: 950px;
+            padding-top: 0.85rem;
+
+            .email-form-title {
+                max-width: none;
+                padding-bottom: 20px;
+                font-size: 1.2rem;
+                padding: 0 5%;
+                margin: 0 auto;
+                font-weight: 400;
+
+            }
+            
+        }
+
+        .email-form-lockup {
+            max-width: 950%;
+            text-align: center;
+            position: relative;
+            display: flex;
+            margin-top: 12px;
+            margin-left: 130px;
+            
+            
+            .nfInput {
+                width: 520px;
+                height: 70px;
+            }
+
+            .button-submit {
+                background-color: #e50914;
+                color: #fff;
+                height: 70px;
+                padding: 0 24px;
+                font-size: 1.625rem;
+                font-weight: 400;
+                border: none;
+            }
+            
+        }
+
+    }
+    
+}
+
+.divider {
+    height: 8px;
+    background-color: #222;
+    margin-top: 3px;
+}
+
+.our-story-cards {   
+    padding: 70px 45px;
+
+    .animation-card-container {
+        padding: 0 45px 70px 45px;
+        display: flex;
+        color: #fff;  
+        max-width: 1100px;
+        margin: 0 auto;
+               
+    } 
+
+    .our-story-card-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        
+        .our-story-card-title { 
+            font-size: 3.125rem;
+            font-weight: 500;
+            line-height: 1.1;  
+            margin-top: 0.5rem;
+
+        }
+
+        .our-story-card-subtitle {
+            font-size: 1.625rem;
+            font-weight: 400;
+
+        }                    
+
+    }
+    
+    .our-story-card-img-container {
+        display: flex;
+        width: 48%;
+        height: 100%;
+        flex: 0 1 auto;
+
+    }
+
+    .our-story-card-animation-container {
+        margin: -10% -5% -5% 0;
+        position: relative;
+        overflow: hidden;   
+        
+        .our-story-card-img {
+            position: relative;
+            z-index: 2;
+            width: 500px;
+            height: auto;
+            border: 0;
+
+        }
+    }
+
+    .our-story-card-animation {
+
+        width: 100%;
+        height: 100%;
+        max-width: 79%;
+        max-height: 54%;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+
+        .our-story-card-video {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            vertical-align: baseline;
+        }
+
+    }
+
+}

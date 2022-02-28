@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  z-index: 0;
+  font-size: 16px;
+  direction: ltr;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  /* height of sticky header */
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.navbar-collapse {
+  -webkit-box-flex: 0 !important;
+      -ms-flex-positive: 0 !important;
+          flex-grow: 0 !important;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.089);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 12px 26px;
+  position: absolute;
+  width: 100vw;
+  z-index: 6;
+}
+
+.main-header nav {
+  width: 100%;
+}
+
+.main-header .logo {
+  width: 10rem;
+  height: 2.75rem;
+  margin-top: 0.25rem;
+  margin-left: 0.95rem;
+}
+
+.main-header .nav-banner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-header .select-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 2rem;
+}
+
+.main-header .select-language .language {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #aaa;
+  color: #ffffff;
+  font-size: .875rem;
+  padding: 0.5rem 1.375rem;
+  font-weight: 500;
+}
+
+.main-header .select-language .language option {
+  background: gray;
+  color: #fff;
+}
+
+.main-header .select-language .language::after {
+  content: url(/img/icomoon/SVG/search.svg);
+}
+
+.main-header .select-language .red-button {
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 7px 17px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.main-banner {
+  height: 75vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.9))), url("/img/BR-pt-20220214-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/img/BR-pt-20220214-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-banner .banner-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.main-banner .banner-items .story-card-text {
+  color: #fff;
+  text-align: center;
+  margin-top: 20%;
+  position: relative;
+  width: 100%;
+  padding: 75px 0;
+  z-index: 1;
+}
+
+.main-banner .banner-items .story-card-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-banner .banner-items .story-card-text h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin: 1rem auto;
+  max-width: 800px;
+}
+
+.main-banner .banner-items .email-form {
+  width: 950px;
+  padding-top: 0.85rem;
+}
+
+.main-banner .banner-items .email-form .email-form-title {
+  max-width: none;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  padding: 0 5%;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.main-banner .banner-items .email-form-lockup {
+  max-width: 950%;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+  margin-left: 130px;
+}
+
+.main-banner .banner-items .email-form-lockup .nfInput {
+  width: 520px;
+  height: 70px;
+}
+
+.main-banner .banner-items .email-form-lockup .button-submit {
+  background-color: #e50914;
+  color: #fff;
+  height: 70px;
+  padding: 0 24px;
+  font-size: 1.625rem;
+  font-weight: 400;
+  border: none;
+}
+
+.divider {
+  height: 8px;
+  background-color: #222;
+  margin-top: 3px;
+}
+
+.our-story-cards {
+  padding: 70px 45px;
+}
+
+.our-story-cards .animation-card-container {
+  padding: 0 45px 70px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.our-story-cards .our-story-card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.our-story-cards .our-story-card-text .our-story-card-title {
+  font-size: 3.125rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+}
+
+.our-story-cards .our-story-card-text .our-story-card-subtitle {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.our-story-cards .our-story-card-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+  height: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.our-story-cards .our-story-card-animation-container {
+  margin: -10% -5% -5% 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-story-cards .our-story-card-animation-container .our-story-card-img {
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  height: auto;
+  border: 0;
+}
+
+.our-story-cards .our-story-card-animation {
+  width: 100%;
+  height: 100%;
+  max-width: 79%;
+  max-height: 54%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.our-story-cards .our-story-card-animation .our-story-card-video {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+/*# sourceMappingURL=style.css.map */
